@@ -99,7 +99,7 @@ func GetSignAndTime(link string, authID string) (string, string) {
 	return sign, finalTime
 }
 
-func FetchHeader() error {
+func Load() error {
 	client := &http.Client{}
 
 	req, err := http.NewRequest("GET", "https://raw.githubusercontent.com/patchsets/onlyfans-dynamic-rules/refs/heads/main/rules.json", nil)
