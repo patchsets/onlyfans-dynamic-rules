@@ -155,7 +155,7 @@ func Load() error {
 	dynamicRules.Format = json_data["start"].(string) + ":%s:%x:" + json_data["end"].(string)
 	dynamicRules.Format = strings.ReplaceAll(dynamicRules.Format, "{}", "%s")
 	dynamicRules.Format = strings.ReplaceAll(dynamicRules.Format, "{:x}", "%x")
-	fmt.Println(dynamicRules.Format)
+	
 	return nil
 }
 
